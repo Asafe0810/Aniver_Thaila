@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
+
+/* Personalização da scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a58f78;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8a7865;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #a58f78 #f1f1f1;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(135deg, #f5f0e6 0%, #e8ded1 100%);
+    min-height: 100vh;
+    color: #5a4c3d;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.main-content {
+    padding-bottom: 50px;
+}
+
+.title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #9c7c5c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.rounded-img {
+    border-radius: 50% !important;
+    border: 5px solid #9c7c5c;
+    box-shadow: 0 0 25px rgba(156, 124, 92, 0.3);
+    transition: transform 0.5s;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.rounded-img:hover {
+    transform: scale(1.05);
+}
+
+.message-card {
+    background: rgba(255, 250, 240, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    height: 100%;
+    border-left: 4px solid #9c7c5c;
+}
+
+.message-card h2 {
+    color: #9c7c5c;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(156, 124, 92, 0.3);
+    padding-bottom: 10px;
+}
+
+.message-card p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.signature {
+    font-style: italic;
+    text-align: right;
+    font-weight: 500;
+    color: #9c7c5c;
+    margin-top: 25px;
+}
+
+.carousel-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    background-color: rgba(90, 76, 61, 0.7);
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.footer {
+    background-color: rgba(90, 76, 61, 0.9);
+    color: #f5f0e6;
+    padding: 15px 0;
+    border-top: 1px solid rgba(156, 124, 92, 0.3);
+}
+
+.confetti {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .title {
+        font-size: 2.8rem;
+    }
+    
+    .rounded-img {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .message-card {
+        margin-bottom: 2rem;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.2rem;
+    }
+    
+    .rounded-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .message-card p {
+        font-size: 1rem;
+    }
+    
+    .carousel-item img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 1.8rem;
+    }
+    
+    .message-card {
+        padding: 15px;
+    }
+    
+    .carousel-item img {
+        height: 300px;
+    }
+}
